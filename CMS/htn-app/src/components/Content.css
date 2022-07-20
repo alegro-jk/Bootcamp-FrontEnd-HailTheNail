@@ -1,0 +1,43 @@
+.content {
+    /* display: flex; */
+    position: absolute;
+    margin-left: 340px;
+    /* padding-left: 270px; */
+    background-color: rgb(215, 251, 253);
+    width: 1060px;
+    height: 625px;
+    border-radius: 10px;
+    padding: 15px;
+}
+#twicelogo {
+    width: 1025px;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+#title {
+    text-align: center;
+    font-family: monospace;
+  }
+  
+#table {
+text-align: center;
+font-family: monospace;
+border-collapse: collapse;
+border: 3px solid rgb(221, 221, 221);
+width: 100%;
+}
+
+#table td, #table th {
+border: 1px solid rgb(221, 221, 221);
+padding: 8px;
+}
+
+#table tr{background-color: rgb(209, 252, 238);}
+
+#table th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: center;
+background-color: rgb(216, 216, 216);
+color: rgb(0, 0, 0);
+}

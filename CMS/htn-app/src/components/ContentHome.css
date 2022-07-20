@@ -1,0 +1,11 @@
+.content {
+    /* display: flex; */
+    position: absolute;
+    margin-left: 275px;
+    /* padding-left: 270px; */
+    background-color: rgb(196, 242, 245);
+    width: 1125px;
+    height: 625px;
+    border-radius: 10px;
+    padding: 15px;
+}

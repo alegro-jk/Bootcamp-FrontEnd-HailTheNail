@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BOOK NOW</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/bookNow.css"/>
+        <script src="./js/bookNow.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="menubar">
+                <div><img src="./media/logo.png" class="logo" id="logo_home"></div>
+                <div class="menubutton"><a id="menulink" href="#">≡</a></div>
+                <div id="menu" class="hiddenmenu">
+                    <div class="menuitem" id="drop1">
+                        <a href="#" id="aboutUs" class="menulink">ABOUT US</a>
+                        <div class="drop1-cont">
+                            <a href="aboutUs1.html" id="story">OUR STORY</a>
+                            <a href="aboutUs2.html" id="team">OUR TEAM</a>
+                        </div>
+                    </div>
+                    <div class="lilspace"><div class="menuitem" id="drop2">
+                        <a href="#" id="services" class="menulink">SERVICES</a>
+                        <div class="drop2-cont">
+                            <a href="services1.html" id="serv1">MANICURE</a>
+                            <a href="services2.html" id="serv2">PEDICURE</a>
+                            <a href="services3.html" id="serv3">NAIL ART</a>                       
+                            <a href="services4.html" id="serv4">CRYOTHERAPY</a>
+                            <a href="services5.html" id="serv5">CHEMICAL PEELING</a>                         
+                        </div>
+                    </div></div>
+                    <div class="menuitem">
+                        <a href="products.html" id="products" class="menulink">PRODUCTS</a></div>
+                    <div class="menuitem">
+                        <a href="locations.html" id="loc" class="menulink">LOCATIONS</a></div>
+                    <div class="menuitem">
+                        <a href="whatsNew.html" id="wnew" class="menulink">WHAT'S NEW</a></div>
+                    <div class="menuitem">
+                        <a href="promos.html" id="promo" class="menulink">PROMOS</a></div>
+                    <div class="menuitem">
+                        <a href="bookNow.html" id="book" class="menulink"><b>BOOK NOW!</b></a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </header>
+        <div class="banner">
+            <h2 class="instruction">
+                <span style="color:red">O</span>
+                <span style="color:orange">R</span>
+                <span style="color:yellow">D</span>
+                <span style="color:green">E</span>
+                <span id="space" style="color:blue">R</span>
+                <span style="color:indigo">F</span>
+                <span style="color:violet">O</span>
+                <span style="color:pink">R</span>
+                <span style="color:red">M</span>
+            </h2>
+            <div class="orderform">
+            <p class="instruction">Please fill out the needed information for the booking services:
+            </p>
+        <form>
+            <label>• First name:</label><br>
+            <input type="text" id="fname" size="50" style="font-family: monospace;"
+                onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"><br><br>
+            <label>• Last name:</label><br>
+            <input type="text" id="lname" size="50" style="font-family: monospace;"
+                onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"><br><br>
+            <label>• Date of Birth:</label><br>
+            <input type="date" id="birthday" size="50" style="font-family: monospace; font-size: 15px;"
+                min="Date()"><br><br>
+            <label>• E-mail:</label><br>
+            <input type="email" id="email" size="50" style="font-family: monospace;"><br><br>
+            <label>• Phone number:</label><br>
+            <input type="tel" id="phone" size="50" style="font-family: monospace;" maxlength="11"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"><br><br>
+            <div id="contact">
+            <p>• Preferred method of contact: </p>
+            <input type="radio" id="mail" value="email" size="50" style="font-family: monospace;">
+            <label>e-mail</label>
+            <input type="radio" id="phone_num" value="phone_num" size="50" style="font-family: monospace;">
+            <label>phone</label>
+            <input type="radio" id="either" value="either" size="50" style="font-family: monospace;">
+            <label>either</label></div><br>
+            <div id="avail">
+            <p>• Service/s to be availed:</p>
+            <input type="checkbox" id="mani" value="Manicure" size="50" style="font-family: monospace;">
+            <label> Manicure</label><br>
+            <input type="checkbox" id="mani" value="Pedicure" size="50" style="font-family: monospace;">
+            <label> Pedicure</label><br>
+            <input type="checkbox" id="ext" value="Nail Extension" size="50" style="font-family: monospace;">
+            <label> Nail Extension</label><br>
+            <input type="checkbox" id="art" value="Nail Art" size="50" style="font-family: monospace;">
+            <label> Nail Art</label><br>
+            <input type="checkbox" id="cryo" value="Cryotherapy" size="50" style="font-family: monospace;">
+            <label> Cryotherapy</label><br>
+            <input type="checkbox" id="peel" value="Chemical Peeling" size="50" style="font-family: monospace;">
+            <label> Chemical Peeling</label><br>
+            <input type="checkbox" id="none" value="None" size="50" style="font-family: monospace;">
+            <label> None</label></div><br>
+            <p>• Product/s to be availed:</p>
+            <input type="checkbox" id="lamp" value="Lamp" size="50" style="font-family: monospace;">
+            <label> Nail Dryer</label><br>
+            <input type="checkbox" id="polish" value="Polish" size="50" style="font-family: monospace;">
+            <label> 36pcs Nail Polish Set</label><br>
+            <input type="checkbox" id="kit" value="Manicure Kit" size="50" style="font-family: monospace;">
+            <label> 18 in 1 Manicure Kit</label><br>
+            <input type="checkbox" id="none1" value="None" size="50" style="font-family: monospace;">
+            <label> None</label><br><br><br>
+            <div id="pref_branch">
+                <select style="font-family: monospace; font-size: 15px;">
+                    <option value="" disabled selected hidden>Preferred Branch:</option>
+                    <option value="silang">Silang</option>
+                    <option value="gentri">Gentri</option>
+                    <option value="nasugbu">Nasugbu</option>
+                </select></div><br><br>
+            <div id="pref_tech">
+            <select name="tech" style="font-family: monospace; font-size: 15px;">
+                <option value="" disabled selected hidden>Preferred Technician:</option>
+                <option value="tech1">Tech 1</option>
+                <option value="tech2">Tech 2</option>
+                <option value="tech3">Tech 3</option>
+                <option value="any">Anyone available</option>
+            </select></div><br><br>
+            <label>• Date of Visit:</label><br>
+            <input type="date" id="day_visit" style="font-family: monospace; font-size: 15px;"><br><br><br>
+            <div id="time">
+            <label>• Time of Visit:</label><br>
+            <input type="number" id="time_visit" name="time_visit" min="1" max="12">
+            <select name="ampm" style="font-family: monospace; font-size: 15px;">
+                <option value="am">AM</option>
+                <option value="pm">PM</option>
+            </select></div><br><br>
+            <label>• Number of Guest/s:</label>
+            <input type="number" id="guest" min="1" max="3"><br><br><br>
+            <label id="req">• Any request:</label><br>
+            <textarea rows="4" cols="50" placeholder="Type here"></textarea maxlenth="200"><br><br>
+            <input type="submit" value="Submit" style="font-family: monospace; font-size: 15px;"
+                onclick="formdata()">
+            <br><br>
+        </form>
+        </div>
+        </div>
+        <div class="footer">
+            <div class="careers" id="foot">
+                <p>Be one of us!</p>
+                <p>✉ htn@careers.com.ph</p>
+                <span class="careersIcon">
+                </span></div>
+            <div class="contactUs" id="foot">
+                <p>CONTACT US</p>
+                <span class="contactIcon">
+                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                </span></div>
+            <div class="copyright" id="foot">
+                <p>©2021 hailthenail.com</p>
+                <p>All rights reserved</p>
+                <p style="text-decoration: underline;">Terms of Use | Privacy Policy</p>
+            </div>
+        </div>
+        <script src="./js/bookNow.js"></script>
+    </body>
+</html>

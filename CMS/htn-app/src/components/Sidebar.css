@@ -1,0 +1,23 @@
+.sidebar {
+    position: absolute;
+    /* margin-left: 20px; */
+    background-color: rgb(209, 252, 238);
+    width: 320px;
+    height: 625px;
+    /* margin-top: 15px; */
+    /* bottom: 20px; */
+    /* border-color: 1px solid black; */
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-top: 30px;
+    
+}
+#info {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+#logout {
+    text-decoration: none;
+    background-color: rgb(255, 220, 250);
+}
